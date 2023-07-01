@@ -1,0 +1,86 @@
+body{
+margin: 0;
+font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(5, 60, 128);
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(229, 227, 233);
+    width: 20vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-productos h2{
+    padding: 2vh;
+    font-weight: bolder;
+}
+
+.categorias p{
+    padding: 1vh;
+    font-weight: bold;
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(229, 227, 233);
+    display: grid;
+    width: 80vw;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding-top: 2vh;
+}
+
+.grilla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.grilla h3{
+    padding: 1vh;
+}
+
+.grilla p{
+    padding: 1vh;
+}
+.grilla button{
+    background-color: rgb(5, 60, 128);
+    color: white;
+    font-weight: bold;
+    height: 4vh;
+    width: 100%;
+    
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    text-align: center;
+}
